@@ -13,13 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Site", "Site", "{C8C8A633-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identite", "Identite", "{8F18274C-AF0A-4F9A-B1E9-91514204D0B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Identite.API", "src\01-servives\ARF.Identite.API\ARF.Identite.API.csproj", "{8367D160-7A6F-4406-A799-5CB944329C6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Identity.API", "src\01-servives\ARF.Identite.API\ARF.Identity.API.csproj", "{8367D160-7A6F-4406-A799-5CB944329C6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.WebApp.Site", "src\03-site\ARF.WebApp.Site\ARF.WebApp.Site.csproj", "{E4C10135-DBBF-4BFE-AD61-BB45F0A6CD48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.WebApp.Site", "src\03-site\ARF.WebApp.Site\ARF.WebApp.Site.csproj", "{E4C10135-DBBF-4BFE-AD61-BB45F0A6CD48}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8D9A818B-463C-4A11-9FA3-A3D86ECD64FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Core", "src\02-ressources\ARF.Core\ARF.Core.csproj", "{8A5E0B3A-08AB-4217-B8C9-08206697FDD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Core", "src\02-ressources\ARF.Core\ARF.Core.csproj", "{8A5E0B3A-08AB-4217-B8C9-08206697FDD6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{D7BD2416-3556-4773-BEEF-3A2180E87942}"
 EndProject
@@ -31,15 +31,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commande", "Commande", "{42
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Produit", "Produit", "{47335BCB-7999-45E5-B178-1A08A59E3B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Panier.API", "src\01-servives\ARF.Panier.API\ARF.Panier.API.csproj", "{2BBD33D9-F64D-4263-8876-55FC2557CC1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Panier.API", "src\01-servives\ARF.Panier.API\ARF.Panier.API.csproj", "{2BBD33D9-F64D-4263-8876-55FC2557CC1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Client.API", "src\01-servives\ARF.Client.API\ARF.Client.API.csproj", "{E79DCC12-631E-4431-A1EA-4F9CA9BD6818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Client.API", "src\01-servives\ARF.Client.API\ARF.Client.API.csproj", "{E79DCC12-631E-4431-A1EA-4F9CA9BD6818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Commande.API", "src\01-servives\ARF.Commande.API\ARF.Commande.API.csproj", "{AC2A908E-3A62-4C85-B570-67444DF5ED39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Commande.API", "src\01-servives\ARF.Commande.API\ARF.Commande.API.csproj", "{AC2A908E-3A62-4C85-B570-67444DF5ED39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Paiement.API", "src\01-servives\ARF.Paiement.API\ARF.Paiement.API.csproj", "{01B15C4E-AD24-4CCC-A966-1636B4996041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Paiement.API", "src\01-servives\ARF.Paiement.API\ARF.Paiement.API.csproj", "{01B15C4E-AD24-4CCC-A966-1636B4996041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARF.Produit.API", "src\01-servives\ARF.Produit.API\ARF.Produit.API.csproj", "{CCDCA135-3C83-490D-9558-10538C89A9F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARF.Produit.API", "src\01-servives\ARF.Produit.API\ARF.Produit.API.csproj", "{CCDCA135-3C83-490D-9558-10538C89A9F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

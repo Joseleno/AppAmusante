@@ -8,13 +8,14 @@ using System.Threading.Tasks;
 
 namespace ARF.Identite.API.Controllers
 {
+    [ApiController]
     [Route("api/identite")]
-    public class AutorisationController : Controller
+    public class AuthorizationController : Controller
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
 
-        public AutorisationController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
+        public AuthorizationController(SignInManager<IdentityUser> signInManager, UserManager<IdentityUser> userManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
