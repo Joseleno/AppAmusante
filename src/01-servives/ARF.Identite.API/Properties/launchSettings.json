@@ -1,7 +1,11 @@
 {
   "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
+    "windowsAuthentication": true,
+    "anonymousAuthentication": false,
+    "iis": {
+      "applicationUrl": "http://localhost/ARF.Identite.API",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:56471",
       "sslPort": 44372
@@ -32,6 +36,9 @@
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/weatherforecast",
       "publishAllPorts": true,
       "useSSL": true
+    },
+    "identiteISS": {
+      "commandName": "IIS"
     }
   }
 }
