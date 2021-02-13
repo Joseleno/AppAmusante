@@ -1,7 +1,11 @@
 {
   "iisSettings": {
-    "windowsAuthentication": false,
+    "windowsAuthentication": true,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/ARF.WebApp.Site",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:56488",
       "sslPort": 44394
@@ -31,6 +35,11 @@
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "publishAllPorts": true,
       "useSSL": true
+    },
+    "IIS": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "sqlDebugging": true
     }
   }
 }
