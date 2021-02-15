@@ -34,11 +34,11 @@ namespace ARF.Identite.API
                 .AddEntityFrameworkStores<ApplicationDBContext>().AddDefaultTokenProviders();
             
             //La configuration JWT
-            var appSettingsSection = Configuration.GetSection("AppConfiguration");
-            services.Configure<AppConfiguration>(appSettingsSection);
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
 
-            var appConfiguration = appSettingsSection.Get<AppConfiguration>();
-            var cle = Encoding.ASCII.GetBytes(appConfiguration.Cle);
+            var appSettings = appSettingsSection.Get<AppSettings>();
+            var cle = Encoding.ASCII.GetBytes(appSettings.Cle);
 
             services.AddAuthentication(options =>
             {
@@ -54,8 +54,8 @@ namespace ARF.Identite.API
                     IssuerSigningKey = new SymmetricSecurityKey(cle),
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = appConfiguration.Couverture,
-                    ValidIssuer = appConfiguration.Emetteur
+                    ValidAudience = appSettings.Couverture,
+                    ValidIssuer = appSettings.Emetteur
                 };
             });
 

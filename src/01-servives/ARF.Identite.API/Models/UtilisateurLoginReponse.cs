@@ -9,6 +9,6 @@ namespace ARF.Identity.API.Models
     {
         public string AccessToken { get; set; }
         public double Duree { get; set; }
-        public UtilisateurToken UtilisateurToken { get; set; }
+        public UtilisateurJeton UtilisateurJeton { get; set; }
     }
 }

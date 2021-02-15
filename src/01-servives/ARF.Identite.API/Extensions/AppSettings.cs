@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ARF.Identity.API.Extensions
+﻿namespace ARF.Identity.API.Extensions
 {
-    public class AppConfiguration
+    public class AppSettings
     {
         public string Cle { get; set; }
         public int Duree { get; set; }
