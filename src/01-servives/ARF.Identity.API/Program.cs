@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ARF.Identite.API
+namespace ARF.Identity.API
 {
     public static class Program
     {

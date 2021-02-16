@@ -1,5 +1,4 @@
-﻿using ARF.Identite.API.Models;
-using ARF.Identity.API.Extensions;
+﻿using ARF.Identity.API.Extensions;
 using ARF.Identity.API.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,25 +11,22 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ARF.Identite.API.Controllers
+
+namespace ARF.Identity.API.Controllers
 {
-    [ApiController]
-    [Route("api/identite")]
-    public class AuthorizationController : Controller
+    [Route("api/identity")]
+    public class AuthorizationController : BaseController
     {
-        
+        private readonly AppSettings _appSettings = new AppSettings();
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
 
-        private readonly AppSettings _appSettings;
-
-        public AuthorizationController(SignInManager<IdentityUser> signInManager,
-                                       UserManager<IdentityUser> userManager, 
-                                       IOptions<AppSettings> appSettings)
+        public AuthorizationController(IOptions<AppSettings> appSettings, SignInManager<IdentityUser> signInManager,
+                                       UserManager<IdentityUser> userManager)
         {
+            _appSettings = appSettings.Value;
             _signInManager = signInManager;
             _userManager = userManager;
-            _appSettings = appSettings.Value;
         }
 
         [HttpPost("nouveau-utilisateur")]
@@ -53,8 +49,8 @@ namespace ARF.Identite.API.Controllers
                 return BadRequest();
             }
             await _signInManager.SignInAsync(utilisateur, false);
-            return Ok();
-            //return Ok(GenererJeton(utilisateurEnregistrement.Courriel));
+            
+            return Ok(GenererJeton(utilisateurEnregistrement.Courriel));
         }
 
         [HttpPost("authentifier")]
@@ -73,10 +69,11 @@ namespace ARF.Identite.API.Controllers
             {
                 return BadRequest();
             }
-            return Ok();
-            //return Ok(await GenererJeton(utilisateurLogin.Courriel));
+            
+            return Ok(await GenererJeton(utilisateurLogin.Courriel));
         }
 
+        [NonAction]
         public async Task<UtilisateurLoginReponse> GenererJeton(string courriel)
         {
             var utilisateur = await _userManager.FindByEmailAsync(courriel);

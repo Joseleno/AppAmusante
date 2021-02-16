@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ARF.Identite.API.Models
+namespace ARF.Identity.API.Models
 {
     public class UtilisateurEnregistrementViewModel
     {

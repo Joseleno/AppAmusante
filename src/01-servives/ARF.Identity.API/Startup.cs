@@ -1,4 +1,4 @@
-using ARF.Identite.API.Data;
+using ARF.Identity.API.Data;
 using ARF.Identity.API.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -13,7 +13,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Text;
 
-namespace ARF.Identite.API
+namespace ARF.Identity.API
 {
     public class Startup
     {
